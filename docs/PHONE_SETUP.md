@@ -76,7 +76,8 @@ py -3 tools/setup_phone.py
 The command:
 
 1. Downloads the v0.4.0 APK from this repository's GitHub Release.
-2. Downloads Llama `.pte` and tokenizer from a pinned upstream revision.
+2. Downloads Llama `.pte` and tokenizer from a pinned upstream revision, falling
+   back to byte-identical GitHub Release mirrors if the upstream CDN is unreachable.
 3. Verifies each size and SHA-256 against committed manifests. Existing valid files
    are reused; interrupted model downloads can resume. Never bypass a checksum failure.
 4. Prepares `artifacts/phone-setup/` with APK, models, licenses and an installer manifest.

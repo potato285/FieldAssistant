@@ -27,3 +27,5 @@ __pycache__/
 /PROJECT_CONTEXT.md
 /START_CODEX_HERE.md
 /MENTORING_TRANSCRIPT.txt
+tools/executorch-tree.json
+tools/*.zip.sha256

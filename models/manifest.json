@@ -6,7 +6,10 @@
       "url": "https://huggingface.co/KumarjitC/plantulus-doctor/resolve/ee2cb607a33fefa85ccc567988c98fc605fa36bd/plantulus_doctor_fp16.tflite",
       "bytes": 11910620,
       "sha256": "3f9b1ef6e7bcc603c6844429ae4ac28607cbfb48fd7b1f856362c824a29a3e65",
-      "license": "MIT declaration in publisher model card"
+      "license": "MIT declaration in publisher model card",
+      "fallback_urls": [
+        "https://github.com/potato285/FieldAssistant/releases/download/v0.4.0/plantulus_doctor_fp16.tflite"
+      ]
     },
     {
       "group": "llama",
@@ -14,7 +17,10 @@
       "url": "https://huggingface.co/executorch-community/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8-ET/resolve/911221e0f49d3354cbd4697a9c09feee25cadec7/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8.pte",
       "bytes": 1135951488,
       "sha256": "8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b",
-      "license": "Llama 3.2 Community License and AUP"
+      "license": "Llama 3.2 Community License and AUP",
+      "fallback_urls": [
+        "https://github.com/potato285/FieldAssistant/releases/download/v0.4.0/llama.pte"
+      ]
     },
     {
       "group": "llama",
@@ -22,7 +28,10 @@
       "url": "https://huggingface.co/executorch-community/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8-ET/resolve/911221e0f49d3354cbd4697a9c09feee25cadec7/tokenizer.model",
       "bytes": 2183982,
       "sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
-      "license": "Llama 3.2 Community License and AUP"
+      "license": "Llama 3.2 Community License and AUP",
+      "fallback_urls": [
+        "https://github.com/potato285/FieldAssistant/releases/download/v0.4.0/tokenizer.model"
+      ]
     }
   ]
 }

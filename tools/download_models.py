@@ -27,24 +27,32 @@ def download(entry, target):
     target.parent.mkdir(parents=True, exist_ok=True)
     partial = target.with_name(target.name + '.part')
     print('Downloading ' + target.name + ' (' + str(entry['bytes']) + ' bytes)', flush=True)
-    # System curl also avoids macOS Python certificate-store setup issues.
-    if shutil.which('curl'):
-        subprocess.run(['curl', '-fL', '--retry', '3', '--connect-timeout', '30',
-                        '--speed-time', '120', '--speed-limit', '1024', '-C', '-',
-                        entry['url'], '-o', str(partial)], check=True)
-    else:
-        offset = partial.stat().st_size if partial.exists() else 0
-        headers = {'Range': 'bytes=%d-' % offset} if offset else {}
-        request = urllib.request.Request(entry['url'], headers=headers)
-        with urllib.request.urlopen(request, timeout=120) as response:
-            resuming = offset > 0 and response.status == 206
-            if resuming and not response.headers.get('Content-Range', '').startswith('bytes %d-' % offset):
-                raise RuntimeError('Server returned an unexpected range; download not installed.')
-            with partial.open('ab' if resuming else 'wb') as output:
-                shutil.copyfileobj(response, output)
-    if partial.stat().st_size != entry['bytes'] or sha256(partial) != entry['sha256']:
-        partial.unlink(missing_ok=True)
-        raise RuntimeError('Checksum/size mismatch for ' + target.name + '; rejected. Retry the download.')
+    urls = [entry['url']] + entry.get('fallback_urls', [])
+    for index, url in enumerate(urls):
+        try:
+            # System curl avoids macOS Python certificate-store setup issues.
+            if shutil.which('curl'):
+                subprocess.run(['curl', '-fL', '--retry', '3', '--connect-timeout', '30',
+                                '--speed-time', '120', '--speed-limit', '1024', '-C', '-',
+                                url, '-o', str(partial)], check=True)
+            else:
+                offset = partial.stat().st_size if partial.exists() else 0
+                headers = {'Range': 'bytes=%d-' % offset} if offset else {}
+                request = urllib.request.Request(url, headers=headers)
+                with urllib.request.urlopen(request, timeout=120) as response:
+                    resuming = offset > 0 and response.status == 206
+                    if resuming and not response.headers.get('Content-Range', '').startswith('bytes %d-' % offset):
+                        raise RuntimeError('Server returned an unexpected range; download not installed.')
+                    with partial.open('ab' if resuming else 'wb') as output:
+                        shutil.copyfileobj(response, output)
+            if partial.stat().st_size != entry['bytes'] or sha256(partial) != entry['sha256']:
+                partial.unlink(missing_ok=True)
+                raise RuntimeError('Checksum/size mismatch for ' + target.name + '; rejected.')
+            break
+        except Exception:
+            if index + 1 == len(urls):
+                raise
+            print('Primary download failed; trying the published mirror with the SAME checksum.', flush=True)
     partial.replace(target)
     print('Verified downloaded ' + target.name, flush=True)
     return target

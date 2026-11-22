@@ -85,7 +85,8 @@ Expect approximately **1.2 GB** of downloads. adb is downloaded from Google if a
 Allow 4–5 GB free computer space for downloads/staging (more if building).
 
 The repository contains source, metadata and download manifests. Large model weights
-are fetched from their original pinned upstream sources; the installable APK is a
+are fetched from their original pinned upstream sources, with byte-identical GitHub
+Release mirrors as a network fallback; the installable APK is a
 [GitHub Release asset](https://github.com/potato285/FieldAssistant/releases/tag/v0.4.0).
 Installing only the APK does **not** install Llama. Follow the full
 [phone setup, voice installation, update and troubleshooting procedure](docs/PHONE_SETUP.md).

@@ -20,7 +20,8 @@ speech, installation and testing are the work implemented in this repository.
   audited. No full training dataset is redistributed. Reported upstream accuracy is
   not our independent field accuracy.
 
-Weights are downloaded from the pinned original source by `tools/download_models.py`;
+Weights are downloaded from the pinned original source by `tools/download_models.py`,
+with a byte-identical, checksum-verified GitHub Release mirror if that CDN fails;
 metadata is committed. The packaged APK includes the vision model and its notices.
 The exact preprocessing contract is described in [TECHNICAL_REPORT.md](TECHNICAL_REPORT.md).
 
@@ -41,8 +42,9 @@ The exact preprocessing contract is described in [TECHNICAL_REPORT.md](TECHNICAL
 **Built with Llama.** Llama 3.2 is licensed under the Llama 3.2 Community License,
 Copyright © Meta Platforms, Inc. All Rights Reserved.
 
-Model weights/tokenizer are not committed to Git. Setup downloads them from the original
-pinned export and includes the agreement, policy and notice in the prepared installer.
+Model weights/tokenizer are not committed to Git. GitHub Release mirrors retain the
+original pinned bytes and accompanying licenses/notices. Setup downloads the original
+pinned export with those release assets as a fallback and includes the agreement, policy and notice in the prepared installer.
 No fine-tuning or model training was performed for this prototype.
 
 ## Test photographs
