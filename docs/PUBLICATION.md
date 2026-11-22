@@ -49,3 +49,29 @@ passed: SDK setup, a fresh upstream vision download/checksum verification, Gradl
 unit tests and lint. [Machine-readable run status](verification/github-ci.json).
 This adds an independent Linux **build** result; it is not a Windows/Linux phone-setup
 or Android-device inference test.
+
+## Published download and public access checks
+
+The repository is public at https://github.com/potato285/FieldAssistant and the
+complete release is https://github.com/potato285/FieldAssistant/releases/tag/v0.4.0.
+
+- A fresh unauthenticated clone from GitHub succeeded; local documentation links resolve.
+- All four APK/model release assets have GitHub-reported SHA-256 digests and sizes
+  matching the committed manifests. [Digest record](verification/release-digests.json).
+- `python3 tools/setup_phone.py --adb PATH_TO_ADB --check-only` downloaded the public
+  APK, verified its hash, reused/re-hashed existing Llama files, prepared the installer
+  and passed the real phone's compatibility check without installing or changing radios.
+  [Output](verification/public-setup.log).
+- A fresh vision-model download subsequently succeeded from upstream as connectivity
+  recovered, and passed the original hash. [Output](verification/public-model-download.log).
+- A controlled primary-URL 404 exercised the actual GitHub fallback: the entire vision
+  file downloaded from the public release and passed the original SHA-256.
+  [Output](verification/public-fallback-download.log).
+- An unauthenticated 4 KiB range download of the public Llama mirror matched the same
+  bytes of the original model. Its full uploaded-file digest was verified against
+  GitHub's server digest. A new full 1.14 GB download was not repeated; existing local
+  bytes were fully re-hashed. First-time model transfer to another phone remains untested.
+
+The repository stores source/metadata; release assets carry binaries, full Llama
+terms, model attribution and checksums. Native voice packs are supplied by the phone's
+speech engine and still require a one-time setup download where missing.

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "field-assistant-debug.apk",
+    "size": 57543158,
+    "state": "uploaded",
+    "digest": "sha256:1553a1b4bc687b2efa92a946b577591f0670cf68689def65f9fd73c043ba09f1"
+  },
+  {
+    "name": "LLAMA-3.2-LICENSE.txt",
+    "size": 7669,
+    "state": "uploaded",
+    "digest": "sha256:8cc15535a8a34b41888f644b339a1a9eb428af793a4f5e24df58a3e5b1487d74"
+  },
+  {
+    "name": "LLAMA-3.2-USE-POLICY.md",
+    "size": 6021,
+    "state": "uploaded",
+    "digest": "sha256:40e2777d7faa6beaf98400654170f414d8ab29b921b5163ad4ea0a1d39894201"
+  },
+  {
+    "name": "llama.pte",
+    "size": 1135951488,
+    "state": "uploaded",
+    "digest": "sha256:8715cdba9e91f6bede00cc5f2d6b12397b95225da5630c4972a8da03001cda3b"
+  },
+  {
+    "name": "NOTICE.txt",
+    "size": 3149,
+    "state": "uploaded",
+    "digest": "sha256:aa3529137ef4c780a37a679104059a10f0670d6d8d0975e55162492b0ddac5d4"
+  },
+  {
+    "name": "plantulus-model-card.md",
+    "size": 2901,
+    "state": "uploaded",
+    "digest": "sha256:2ce72641e5400fc62931d732c5794cb8b6285cc5b19d79cf5862213704fd5f14"
+  },
+  {
+    "name": "plantulus_doctor_fp16.tflite",
+    "size": 11910620,
+    "state": "uploaded",
+    "digest": "sha256:3f9b1ef6e7bcc603c6844429ae4ac28607cbfb48fd7b1f856362c824a29a3e65"
+  },
+  {
+    "name": "RELEASE-SHA256SUMS.txt",
+    "size": 345,
+    "state": "uploaded",
+    "digest": "sha256:c5df2b0ef6ef6ba1229771df8547a47794baa2d55a7e6fbe98734905f3df9175"
+  },
+  {
+    "name": "THIRD_PARTY_NOTICES.md",
+    "size": 6002,
+    "state": "uploaded",
+    "digest": "sha256:1b1253ae3901ec213c4c3a2564ab52aa8eda1014f294199e2f36cb3b25859d7b"
+  },
+  {
+    "name": "tokenizer.model",
+    "size": 2183982,
+    "state": "uploaded",
+    "digest": "sha256:82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55"
+  }
+]
