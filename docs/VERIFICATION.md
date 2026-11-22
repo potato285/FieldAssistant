@@ -57,15 +57,18 @@ Original v0.1 airplane-mode/no-active-network tests passed real vision, Llama an
 English/Tamil speech synthesis: [test log](verification/airplane-mode-test.log),
 [vision result](verification/vision-phone-offline.json),
 [Llama result](verification/llama-phone-offline.json).
-v0.4 tests kept mobile data enabled because the phone supplies the laptop's internet;
-local voice selection and unchanged radios were recorded. No fresh v0.4 airplane-mode
-verification is claimed. Speech is performed by an external installed local TTS engine.
+
+**Current app — user-reported manual offline verification (22 November 2026):** the
+project owner reports manually testing the app offline and confirms it works. This
+observation is recorded separately from the automated test logs above. Speech uses
+an external installed local TTS engine with downloaded offline voice data.
 
 ## What these tests do not establish
 
 - Independent field accuracy, confusion matrix or per-class recall.
 - Reliable unknown-image rejection or reliable automatic crop identification.
-- Severity or sapodilla/mealybug detection.
+- Severity classification: required by the problem statement, not implemented in
+  Phase 1, and explicitly planned for Phase 2. Sapodilla/mealybug detection is also absent.
 - General accuracy of free Llama explanations or chemical registration/approval.
 - Native-speaker/agronomist review, voice quality or real farmer usability.
 - Other phones, lower RAM, 16 KB memory pages, battery or sustained thermal behavior.

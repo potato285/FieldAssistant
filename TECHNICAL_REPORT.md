@@ -1,7 +1,13 @@
-# Field Assistant — prototype technical report
+# Field Assistant — Phase 1 proof-of-concept technical report
 
 Version 0.4.0, Bharat AI–SoC Challenge 2026–27. **Built with Llama.** This report
 separates demonstrated runtime integration from unmeasured field accuracy.
+
+**Phase 1 scope:** 54 classification labels across 19 plants, but **only three
+conditions have crop-specific advice: potato early blight, potato late blight and
+tomato early blight**. All other findings receive general observation/referral guidance.
+**Severity classification is required by the problem statement but is not implemented.
+It is explicitly a Phase 2 objective**, not a completed Phase 1 capability.
 
 ## System and scope
 
@@ -60,8 +66,8 @@ competition validation or broad advisory correctness.
 
 ## Guidance, languages and speech
 
-Current crop-specific coverage: tomato early blight and potato early/late blight,
-fixed Tamil Nadu, India region. All other findings use general observation/referral
+**Only three conditions have crop-specific advice:** tomato early blight, potato early
+blight and potato late blight, with a fixed Tamil Nadu, India region. All other findings use general observation/referral
 reminders. TNAU, UC IPM, PNW Extension and Manitoba source URLs/scope/dates are in JSON.
 Potato fungicide names are conditional officer/label discussion points, with no dose
 or schedule. No agronomist approval or current registration audit is claimed.
@@ -89,24 +95,37 @@ Acoustic quality is not established by automated playback/state tests.
 | Initial vision | Tomato early blight score 0.92736334; 80.47 ms first, 52.68–55.20 ms subsequent | Historical v0.1 fixture smoke test |
 | Initial Llama | 12.768 s including hash/load, 16.14 tokens/s | Historical smaller advisory prompt |
 | Initial memory | Process PSS 1,566,964 KiB with model loaded | One historical observation, not peak RAM requirement |
-| Initial offline | Vision/Llama/English-Tamil synthesis passed with airplane mode and no default network | Historical v0.1; not repeated in v0.4 |
+| Initial offline | Vision/Llama/English-Tamil synthesis passed with airplane mode and no default network | Historical v0.1 automated evidence |
+| Current app offline | Project owner reports successful manual offline use | User-reported, 22 November 2026; separate from automated logs |
 
 Exact current commands and sanitized raw outputs: [VERIFICATION.md](docs/VERIFICATION.md).
 No benchmark average, field accuracy, per-class recall, power or thermal measurements
-are inferred from these small smoke tests. v0.4 preserved the tethering phone's
-connection and did not rerun airplane-mode tests.
+are inferred from these small smoke tests.
 
 ## Deployment and limits
 
 ARM64 only; minimum Android 9. Tested on Nothing A001, Android 16, approximately 8 GB
 RAM class, 4 KB pages. No 16 KB-page or lower-RAM compatibility claim. Model provisioning
-uses debuggable APK `run-as`; no production model importer or release-signing process
-is complete. No private signing key is committed.
+uses `adb run-as` and requires a **debuggable APK**. This is the **Phase 1 prototype
+installation method, not production distribution**. A production model importer and
+release-signing process are Phase 2 objectives. No private signing key is committed.
 
-Still required: independent field dataset/evaluation; crop-mismatch and unknown-image
-improvements; validated pest detector and severity estimator; sapodilla/mealybug support;
-reviewed multilingual/regional content; broader device/lifecycle tests; memory/thermal/
-battery characterization; farmer usability; production distribution; narrated demo.
+## Phase 2 objectives
+
+1. **Required severity classification: not implemented in Phase 1.** Establish severity
+   labels and a measurable method, then validate against expert-labeled examples.
+   Classifier confidence is not severity and will not substitute for this requirement.
+2. Broaden crop-specific guidance beyond the current three conditions and review
+   multilingual/regional content with native speakers and agronomists.
+3. Evaluate independent field images, improve crop-mismatch/unknown handling, and add
+   validated pest detection, including the intended sapodilla/mealybug demonstration.
+4. Provide production signing and model setup without a debuggable APK or `run-as`.
+5. Test more devices and lifecycle cases, memory/thermal/battery behavior and farmer
+   usability.
+
+The [Phase 1 demonstration script](DEMO_WALKTHROUGH.md) explicitly presents severity
+as an unmet requirement planned for Phase 2. The narrated video recording is still
+outstanding.
 
 [Third-party attribution and licensing](THIRD_PARTY_NOTICES.md) distinguish all original
 training/export work from this project's application and integration work.

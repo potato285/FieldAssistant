@@ -93,14 +93,16 @@ runtime. The app has no INTERNET permission and does no model downloads.
 `tools/offline-check.sh --allow-network-interruption` changes phone radios and restores
 them; run only with an independent computer network and deliberate authorization to
 interrupt the phone's connection. Do not use it while tethering through that phone.
-Historical airplane-mode evidence and current connectivity-preserving tests are
-separately described in [VERIFICATION.md](VERIFICATION.md).
+Recorded automated airplane-mode evidence and the project owner's manual offline
+verification are described in [VERIFICATION.md](VERIFICATION.md).
 
 ## Release signing and reproducibility limits
 
 `./gradlew assembleRelease` compiles an **unsigned** release APK with the developer
-panel removed. It is not the published/provisioned build. General-user model importing,
-production signing/distribution and 16 KB compatibility remain work to do.
+panel removed. It is not the published/provisioned build. The **Phase 1 prototype
+installer requires a debuggable APK** because Llama provisioning uses `adb run-as`.
+This is not production distribution. General-user model importing, production
+signing/distribution and 16 KB compatibility are Phase 2 objectives.
 
 The published v0.4.0 APK uses the original development debug certificate. Keys,
 keystores and local SDK paths are excluded from Git. A new machine/CI uses its own

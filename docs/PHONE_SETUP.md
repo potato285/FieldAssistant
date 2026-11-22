@@ -4,6 +4,11 @@ This procedure installs **both the app and the mandatory offline Llama files**.
 It does not require Android Studio, an API key or a paid account. The computer installs
 an Android app on a phone; it does not run the Android app itself.
 
+**Phase 1 prototype installation, not production distribution:** the installer requires
+a **debuggable APK** and USB debugging because it provisions Llama through `adb run-as`.
+The supplied debug APK supports this procedure; a non-debuggable release APK does not.
+Production signing and a user-facing model setup flow are Phase 2 objectives.
+
 ## 1. Check the phone and computer
 
 | Item | Requirement / tested status |
@@ -145,8 +150,9 @@ force a treatment result. These checks prove execution, not diagnostic accuracy.
 After setup you can disconnect USB and disable USB debugging. To demonstrate offline
 operation, first ensure local photos and voices are installed. Turn off networking
 only when it will not disconnect your computer or interrupt another task. The app
-itself has no INTERNET permission; the earlier recorded offline test is documented
-in [verification](VERIFICATION.md).
+itself has no INTERNET permission. Recorded automated airplane-mode evidence and the
+project owner's successful manual offline test are documented in
+[verification](VERIFICATION.md).
 
 ## 7. Updates and removal
 

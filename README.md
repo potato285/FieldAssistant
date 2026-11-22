@@ -1,9 +1,17 @@
 # Field Assistant
 
-**An offline Android crop-health assistant for the Bharat AI–SoC Challenge 2026–27.**
+**Phase 1 — proof of concept:** an offline Android crop-health assistant for the
+Bharat AI–SoC Challenge 2026–27.
 
 **Built with Llama.** Current prototype: **v0.4.0**. Native Kotlin/Jetpack Compose;
 real image inference with LiteRT and real Llama 3.2 inference with ExecuTorch.
+
+**Phase 1 scope:** the pretrained classifier has **54 labels across 19 plants**, but
+**only three conditions have crop-specific advice: potato early blight, potato late
+blight and tomato early blight**. Other findings receive general observation/referral
+instructions. **Severity classification is required by the problem statement but is
+not implemented; it is a Phase 2 objective.** This is a working proof of concept,
+not the completed competition solution or a production release.
 
 [Install on a phone](docs/PHONE_SETUP.md) · [Build from source](docs/BUILD.md) ·
 [Supported crops](docs/SUPPORTED_CROPS.md) · [Technical report](TECHNICAL_REPORT.md) ·
@@ -31,7 +39,8 @@ occur on real photographs.
 ## What works now
 
 - Native Android camera/gallery flow and user crop selection/correction.
-- Real 54-class leaf-image inference across 19 plants through LiteRT 1.4.2.
+- Real 54-class leaf-image inference across 19 plants through LiteRT 1.4.2;
+  **crop-specific advice covers only the three conditions named above**.
 - Genuine Llama 3.2 1B Instruct SpinQuant INT4 execution through ExecuTorch 0.6.0
   on the ARM CPU, with automatic advice after photo analysis.
 - Sourced care/treatment/prevention for potato early/late blight and narrower tomato
@@ -68,6 +77,11 @@ or run successfully. macOS and the listed phone are tested; Windows/Linux setup 
 is provided but has not been exercised on those operating systems.
 
 ### Quick installation — no Android Studio required
+
+**Phase 1 prototype installation:** Llama provisioning uses `adb run-as` and requires
+an explicitly **debuggable APK** plus USB debugging. This is a development setup
+method, not production distribution. A signed production build and user-facing model
+import/setup flow are Phase 2 objectives.
 
 Read the [model licenses](THIRD_PARTY_NOTICES.md), then:
 
@@ -113,7 +127,11 @@ will be deleted; see the update instructions.
 
 ## Supported crops and diseases
 
-The classifier has **54 labels across 19 plants**. Coverage includes potato early/late
+**Classification: 54 labels across 19 plants. Crop-specific advice: only three
+conditions — potato early blight, potato late blight and tomato early blight.**
+These are separate coverage limits in this Phase 1 proof of concept.
+
+Classifier coverage includes potato early/late
 blight; multiple tomato conditions; apple scab/black rot/cedar rust; corn leaf diseases;
 grape diseases; and additional plants listed below. A listed label is not an accuracy
 claim. Some plants have **healthy-only** labels.
@@ -183,7 +201,8 @@ ExecuTorch community, pinned to `911221e0f49d3354cbd4697a9c09feee25cadec7`.
 Runtime: **ExecuTorch Android 0.6.0**, CPU. No Hailo accelerator or remote inference.
 Model and runtime are a tested pair; upgrading either requires renewed testing.
 Private provisioning currently uses `adb run-as`, so it requires a **debuggable APK**.
-A production model-import/distribution flow and release signing remain future work.
+This is the **Phase 1 prototype installation method**, not production distribution.
+A production model-import/distribution flow and release signing are Phase 2 objectives.
 
 ## How offline operation works
 
@@ -193,10 +212,10 @@ into private app storage. Android's speech engine stores downloaded offline voic
 packs. After setup, photos, vision inference, Llama generation, saved text and speech
 run locally. The app manifest requests **no INTERNET permission**.
 
-An initial airplane-mode/no-active-network test passed vision, Llama and English/Tamil
-speech synthesis. v0.4 phone tests passed without changing connectivity, using local
-voices; no fresh airplane-mode result is claimed for that version. If the phone also
-provides your computer's internet, keep its data/hotspot on during setup and tests.
+An initial automated airplane-mode/no-active-network test passed vision, Llama and
+English/Tamil speech synthesis. The project owner also reports successful manual
+offline use of the current app (22 November 2026). See the [verification record](docs/VERIFICATION.md)
+for the automated evidence and the separate user-reported manual result.
 Cloud-backed gallery photos may need to be downloaded first; choose locally stored
 photos when demonstrating offline use.
 
@@ -238,11 +257,23 @@ belongs to their respective upstream authors.
 - Camera/gallery launch/cancel and gallery callback paths were tested; actual camera
   shutter capture is not yet verified by the automated tests.
 
-See [commands, measurements and limitations](docs/VERIFICATION.md). Outstanding work:
-independent field evaluation and crop-mismatch improvement; reliable unknown detection;
-sapodilla/mealybug support; validated severity; broader guidance; native-speaker and
-agronomist review; more phones/16 KB pages; memory/thermal/battery evaluation; production
-signing/provisioning; and the final narrated competition video.
+See [commands, measurements and limitations](docs/VERIFICATION.md). The
+[Phase 1 video script](DEMO_WALKTHROUGH.md) states the demonstrated scope and remaining
+requirements; the final narrated recording is still outstanding.
+
+## Phase 2 objectives
+
+- **Implement severity classification, which is required by the problem statement
+  and absent from Phase 1.** Develop and validate a separate severity method against
+  labeled examples; disease confidence must never be used as severity.
+- Expand reviewed crop-specific advice beyond the current three conditions, with
+  native-speaker and agronomist review of language and regional content.
+- Improve crop-mismatch/unknown-image handling and evaluate independent field images;
+  develop and validate additional pest support, including sapodilla/mealybug.
+- Replace debug-only USB provisioning with production signing and a user-facing
+  offline-model setup/distribution flow.
+- Validate more phones, 16 KB memory pages, memory/thermal/battery behavior and farmer
+  usability. Current runtime demonstrations do not establish these outcomes.
 
 ## Model sources and licenses
 

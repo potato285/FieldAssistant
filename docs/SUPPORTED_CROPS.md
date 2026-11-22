@@ -1,6 +1,10 @@
 # Model label coverage
 
-The pinned Plantulus Doctor model has 54 output classes across 19 crops/plants.
+The pinned Plantulus Doctor model has **54 output classes across 19 crops/plants**.
+**Phase 1 crop-specific advice covers only three conditions: potato early blight,
+potato late blight and tomato early blight.** All other findings receive general
+observation/referral instructions. Classification coverage is broader than advice coverage.
+
 This is the model's declared label set, not measured field accuracy. Healthy-only
 plants have no disease class coverage. Crop selection is supplied/corrected by the
 user. Cactus cochineal and tomato spider-mite labels do not establish detection of
