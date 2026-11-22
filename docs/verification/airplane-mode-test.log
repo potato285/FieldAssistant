@@ -1,0 +1,69 @@
+Original airplane=0 wifi=0 mobile_data=1
+Verified airplane_mode_on=1
+Wifi is disabled
+Wifi scanning is always available
+Active default network: none
+INSTRUMENTATION_STATUS: class=org.fieldassistant.VisionSmokeTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+org.fieldassistant.VisionSmokeTest:
+INSTRUMENTATION_STATUS: test=actualPhotographRunsThroughBundledModel
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=org.fieldassistant.VisionSmokeTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=actualPhotographRunsThroughBundledModel
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=org.fieldassistant.LlamaSmokeTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+org.fieldassistant.LlamaSmokeTest:
+INSTRUMENTATION_STATUS: test=realLlamaChoosesApprovedGuidanceFromRealVisionFinding
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=org.fieldassistant.LlamaSmokeTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=realLlamaChoosesApprovedGuidanceFromRealVisionFinding
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=org.fieldassistant.SpeechSynthesisTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+org.fieldassistant.SpeechSynthesisTest:
+INSTRUMENTATION_STATUS: test=installedEnglishAndTamilVoicesProduceAudioInAirplaneMode
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=org.fieldassistant.SpeechSynthesisTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=installedEnglishAndTamilVoicesProduceAudioInAirplaneMode
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 16.068
+
+OK (3 tests)
+
+
+INSTRUMENTATION_CODE: -1
+/sdcard/Android/data/org.fieldassistant/files/evidence/vision-smoke.json: 1 file pulled, 0 skipped. 0.4 MB/s (2375 bytes in 0.006s)
+/sdcard/Android/data/org.fieldassistant/files/evidence/llama-smoke.json: 1 file pulled, 0 skipped. 0.2 MB/s (743 bytes in 0.004s)
+/sdcard/Android/data/org.fieldassistant/files/evidence/offline-speech.json: 1 file pulled, 0 skipped. 0.4 MB/s (905 bytes in 0.002s)
+/sdcard/Android/data/org.fieldassistant/files/evidence/offline-speech-en.wav: 1 file pulled, 0 skipped. 31.8 MB/s (379114 bytes in 0.011s)
+/sdcard/Android/data/org.fieldassistant/files/evidence/offline-speech-ta.wav: 1 file pulled, 0 skipped. 32.4 MB/s (371142 bytes in 0.011s)
+Both real inference reports confirm airplane mode was enabled.
+Restored network settings (airplane, Wi-Fi, mobile-data preference):
+0
+Wifi is disabled
+Wifi scanning is always available
+1

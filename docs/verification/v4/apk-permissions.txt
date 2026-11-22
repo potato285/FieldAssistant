@@ -1,0 +1,3 @@
+package: org.fieldassistant
+permission: org.fieldassistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission: name='org.fieldassistant.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'

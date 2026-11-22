@@ -1,0 +1,280 @@
+{
+  "schema_version": 2,
+  "region": "Tamil Nadu, India",
+  "review_status": "Prototype source-grounded summaries; agronomist and native Tamil/Telugu review pending. Language does not change the Tamil Nadu guidance region.",
+  "sources": [
+    {
+      "id": "tnau_tomato_early_blight",
+      "title": "TNAU Agritech — Tomato early blight",
+      "url": "https://agritech.tnau.ac.in/crop_protection/tomato_diseases_2.html",
+      "accessed": "2026-11-21",
+      "scope": "Paraphrased nonchemical crop sanitation and rotation guidance only. No chemical recommendations reproduced."
+    },
+    {
+      "id": "prototype_observation",
+      "title": "Field Assistant — general observation and referral steps",
+      "url": "",
+      "accessed": "2026-11-21",
+      "scope": "Team-authored observation steps. These are not a crop treatment protocol."
+    },
+    {
+      "id": "tnau_potato_early_blight",
+      "title": "TNAU Agritech — Potato early blight",
+      "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_veg_potato_2.html",
+      "accessed": "2026-11-22",
+      "scope": "Short nonchemical paraphrases about infected debris and disease-free planting tubers. No chemical recommendations reproduced."
+    },
+    {
+      "id": "tnau_potato_crop",
+      "title": "TNAU Agritech — Potato crop guide (Tamil Nadu)",
+      "url": "https://agritech.tnau.ac.in/horticulture/horti_vegetables_potato.html",
+      "accessed": "2026-11-22",
+      "scope": "Short paraphrase of early/late blight fungicide options and late-blight resistant varieties. Web guide updated 2013; current formulation registration, dose and harvest interval must be checked on product label with local officer. No dose reproduced."
+    },
+    {
+      "id": "uc_potato_early",
+      "title": "UC IPM — Potato early blight",
+      "url": "https://ipm.ucanr.edu/agriculture/potato/early-blight/",
+      "accessed": "2026-11-22",
+      "scope": "General disease biology and nonchemical growing-condition guidance only; California pesticide rates not used."
+    },
+    {
+      "id": "manitoba_potato_late",
+      "title": "Manitoba Agriculture — Integrated management of potato late blight",
+      "url": "https://www.gov.mb.ca/agriculture/crops/plant-diseases/mgmt-late-blight-potatoes.html",
+      "accessed": "2026-11-22",
+      "scope": "General sanitation, irrigation, healthy seed, storage and limits of cure. Canadian pesticide recommendations not used."
+    },
+    {
+      "id": "tnau_potato_late",
+      "title": "TNAU Agritech — Potato late blight",
+      "url": "https://agritech.tnau.ac.in/crop_protection/crop_prot_crop%20diseases_veg_potato_1.html",
+      "accessed": "2026-11-22",
+      "scope": "Short symptom and harvest-handling paraphrases only."
+    },
+    {
+      "id": "pnw_potato_early",
+      "title": "PNW Extension (OSU/WSU/UI) — Potato early blight, March 2026",
+      "url": "https://pnwhandbooks.org/plantdisease/host-disease/potato-solanum-tuberosum-early-blight",
+      "accessed": "2026-11-22",
+      "scope": "Short nonchemical rotation, irrigation and harvest paraphrases; US pesticide uses and rates not used."
+    }
+  ],
+  "actions": [
+    {
+      "id": "retake",
+      "source": "prototype_observation",
+      "labels": [],
+      "en": "Take a clear photograph of one leaf in daylight. Also photograph the underside and the whole plant for an expert.",
+      "ta": "பகல் வெளிச்சத்தில் ஒரு இலையைத் தெளிவாகப் படம் எடுக்கவும். நிபுணரிடம் காட்ட இலையின் அடிப்பகுதியையும் முழுச் செடியையும் படம் எடுக்கவும்.",
+      "te": "పగటి వెలుతురులో ఒక ఆకును స్పష్టంగా ఫోటో తీయండి. నిపుణుడికి చూపడానికి ఆకు వెనుక భాగాన్ని, మొత్తం మొక్కను కూడా ఫోటో తీయండి.",
+      "section": "reminder"
+    },
+    {
+      "id": "observe",
+      "source": "prototype_observation",
+      "labels": [],
+      "en": "Check nearby plants. Note when the problem started and whether it is spreading. This photo cannot tell us how much of the crop is affected.",
+      "ta": "அருகிலுள்ள செடிகளையும் பாருங்கள். அறிகுறிகள் எப்போது தொடங்கின, பரவுகின்றனவா என்று குறித்துக்கொள்ளுங்கள். இந்தப் படத்தை மட்டும் வைத்து பாதிப்பின் தீவிரத்தை அளவிட முடியாது.",
+      "te": "పక్క మొక్కలను కూడా చూడండి. సమస్య ఎప్పుడు మొదలైందో, వ్యాపిస్తోందో రాసుకోండి. ఈ ఫోటోతో పంటలో ఎంత భాగం దెబ్బతిన్నదో చెప్పలేము.",
+      "section": "reminder"
+    },
+    {
+      "id": "expert",
+      "source": "prototype_observation",
+      "labels": [],
+      "en": "Ask a local agricultural extension officer to confirm the cause before treatment. Seek help promptly if damage is spreading quickly.",
+      "ta": "சிகிச்சைக்கு முன் காரணத்தை உறுதி செய்ய உள்ளூர் வேளாண் அலுவலரை அணுகவும். பாதிப்பு விரைவாகப் பரவினால் உடனே ஆலோசனை பெறவும்.",
+      "te": "చికిత్సకు ముందు కారణాన్ని స్థానిక వ్యవసాయ అధికారితో నిర్ధారించుకోండి. నష్టం వేగంగా వ్యాపిస్తే వెంటనే సహాయం పొందండి.",
+      "section": "reminder"
+    },
+    {
+      "id": "debris",
+      "source": "tnau_tomato_early_blight",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "en": "If tomato early blight is confirmed, remove infected crop debris from the growing area. Ask your extension officer about safe disposal.",
+      "ta": "தக்காளியில் முன்பருவ இலைக்கருகல் உறுதி செய்யப்பட்டால், பாதிக்கப்பட்ட பயிர்க் கழிவுகளை விளைநிலத்திலிருந்து அகற்றவும். பாதுகாப்பாக அகற்றுவது பற்றி வேளாண் அலுவலரிடம் கேளுங்கள்.",
+      "te": "టమాటాలో ముందస్తు ఆకు మాడు తెగులు నిర్ధారణ అయితే, సోకిన పంట అవశేషాలను పొలం నుంచి తొలగించండి. సురక్షితంగా పారవేయడం గురించి వ్యవసాయ అధికారిని అడగండి.",
+      "section": "prevention"
+    },
+    {
+      "id": "rotation",
+      "source": "tnau_tomato_early_blight",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "en": "For confirmed tomato early blight, discuss a suitable crop rotation plan with your local extension officer before the next planting.",
+      "ta": "தக்காளி முன்பருவ இலைக்கருகல் உறுதி செய்யப்பட்டால், அடுத்த நடவுக்கு முன் பொருத்தமான பயிர் சுழற்சியைப் பற்றி உள்ளூர் வேளாண் அலுவலருடன் ஆலோசிக்கவும்.",
+      "te": "టమాటాలో ముందస్తు ఆకు మాడు తెగులు నిర్ధారణ అయితే, తదుపరి నాటుకు ముందు తగిన పంట మార్పిడి గురించి వ్యవసాయ అధికారిని అడగండి.",
+      "section": "prevention"
+    },
+    {
+      "id": "potato_debris",
+      "source": "tnau_potato_early_blight",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "en": "If potato early blight is confirmed, remove infected plant debris from the field. Ask your agricultural officer how to dispose of it safely.",
+      "ta": "உருளைக்கிழங்கில் முன்பருவ இலைக்கருகல் உறுதியானால், பாதிக்கப்பட்ட செடிக் கழிவுகளை வயலிலிருந்து அகற்றவும். பாதுகாப்பாக அகற்றுவது எப்படி என்று வேளாண் அலுவலரிடம் கேளுங்கள்.",
+      "te": "బంగాళాదుంపలో ముందస్తు ఆకు మాడు తెగులు నిర్ధారణ అయితే, సోకిన మొక్కల అవశేషాలను పొలం నుంచి తొలగించండి. సురక్షితంగా పారవేయడం గురించి వ్యవసాయ అధికారిని అడగండి.",
+      "section": "prevention"
+    },
+    {
+      "id": "potato_seed",
+      "source": "tnau_potato_early_blight",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "en": "For the next potato planting, use disease-free seed tubers. Ask your agricultural officer to help you choose suitable planting material.",
+      "ta": "அடுத்த உருளைக்கிழங்கு நடவுக்கு நோயற்ற விதைக் கிழங்குகளைப் பயன்படுத்தவும். ஏற்ற விதைக் கிழங்குகளைத் தேர்வு செய்ய வேளாண் அலுவலரிடம் உதவி கேளுங்கள்.",
+      "te": "తదుపరి బంగాళాదుంప నాటుకు రోగరహిత విత్తన దుంపలు వాడండి. తగిన నాటే దుంపలను ఎంచుకోవడానికి వ్యవసాయ అధికారి సహాయం తీసుకోండి.",
+      "section": "prevention"
+    },
+    {
+      "id": "potato_early_signs",
+      "section": "care",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "source": "uc_potato_early",
+      "en": "Check older, lower leaves for dark spots with rings like a target. Early blight often affects stressed plants. Similar symptoms need expert confirmation.",
+      "ta": "முதிர்ந்த கீழ் இலைகளில் வளையங்களுடன் கரும்புள்ளிகள் உள்ளனவா பாருங்கள். முன்பருவ இலைக்கருகல் பலவீனமான செடிகளை அதிகம் பாதிக்கும். இதே போன்ற அறிகுறிகளை நிபுணர் உறுதி செய்ய வேண்டும்.",
+      "te": "ముదిరిన కింది ఆకులపై వలయాలతో కూడిన ముదురు మచ్చలు ఉన్నాయేమో చూడండి. ముందస్తు ఆకు మాడు తెగులు బలహీనమైన మొక్కలను ఎక్కువగా ప్రభావితం చేస్తుంది. ఇలాంటి లక్షణాలను నిపుణుడితో నిర్ధారించాలి."
+    },
+    {
+      "id": "potato_water_feed",
+      "section": "prevention",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "source": "uc_potato_early",
+      "en": "Keep plants growing steadily with suitable irrigation and balanced nutrition. Ask for a soil-based feeding plan; poor growing conditions can make early blight worse.",
+      "ta": "ஏற்ற நீர்ப்பாசனம் மற்றும் சமச்சீர் ஊட்டச்சத்தால் செடிகள் சீராக வளர உதவுங்கள். மண் பரிசோதனைக்கு ஏற்ற உரத் திட்டத்தைக் கேளுங்கள்; மோசமான வளர்ச்சி நிலை முன்பருவ இலைக்கருகலை அதிகரிக்கலாம்.",
+      "te": "తగిన నీటిపారుదల, సమతుల్య పోషణతో మొక్కలు సక్రమంగా పెరిగేలా చూడండి. నేలకు తగిన పోషక ప్రణాళిక అడగండి; అనుకూలం కాని పెరుగుదల పరిస్థితులు ఈ తెగులును పెంచవచ్చు."
+    },
+    {
+      "id": "potato_early_control",
+      "section": "treatment",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "source": "uc_potato_early",
+      "en": "Management aims to limit further disease and protect the crop. A fungicide may be useful when early disease threatens the harvest; an agricultural officer should assess whether spraying is needed.",
+      "ta": "மேலும் நோய் பரவுவதைக் குறைத்து பயிரைப் பாதுகாப்பதே மேலாண்மையின் நோக்கம். ஆரம்பத்தில் நோய் மகசூலைப் பாதிக்கும் நிலையில் பூஞ்சைக்கொல்லி உதவலாம்; தெளிப்பு தேவையா என்பதை வேளாண் அலுவலர் மதிப்பிட வேண்டும்.",
+      "te": "తెగులు మరింత వ్యాపించకుండా పంటను కాపాడటమే నిర్వహణ లక్ష్యం. తొలిదశలో తెగులు దిగుబడికి ముప్పు కలిగిస్తే శిలీంద్రనాశిని ఉపయోగపడవచ్చు; పిచికారీ అవసరమో వ్యవసాయ అధికారి నిర్ణయించాలి."
+    },
+    {
+      "id": "potato_fungicide",
+      "section": "treatment",
+      "labels": [
+        "potato_early_blight",
+        "potato_late_blight"
+      ],
+      "source": "tnau_potato_crop",
+      "en": "For confirmed potato early or late blight, TNAU lists mancozeb or chlorothalonil as fungicide options. Ask your local officer which currently registered potato product fits your crop stage and past sprays. Use only its label dose, protection equipment, re-entry and harvest waiting periods. Do not mix products or spray from this photo alone.",
+      "ta": "உருளைக்கிழங்கு முன்பருவ அல்லது பின்பருவ இலைக்கருகல் உறுதியானால், TNAU மான்கோசெப் அல்லது குளோரோதலோனில் பூஞ்சைக்கொல்லிகளைக் குறிப்பிடுகிறது. பயிர் நிலை, முந்தைய தெளிப்புகளுக்கு ஏற்ற தற்போது பதிவு பெற்ற உருளைக்கிழங்கு மருந்தை அலுவலரிடம் உறுதி செய்யுங்கள். அதன் லேபிளில் உள்ள அளவு, பாதுகாப்பு உடை, வயலில் மீண்டும் நுழையும் மற்றும் அறுவடை காத்திருப்பு காலங்களைப் பின்பற்றுங்கள். மருந்துகளைக் கலக்கவோ இந்தப் படத்தை மட்டும் வைத்து தெளிக்கவோ வேண்டாம்.",
+      "te": "బంగాళాదుంపలో ముందస్తు లేదా ఆలస్యపు ఆకు మాడు తెగులు నిర్ధారణ అయితే, TNAU మాంకోజెబ్ లేదా క్లోరోథలోనిల్ శిలీంద్రనాశినులను సూచిస్తుంది. పంట దశ, గత పిచికారీలకు సరిపోయే, ప్రస్తుతం బంగాళాదుంపకు నమోదు చేసిన ఉత్పత్తిని అధికారితో నిర్ధారించండి. లేబుల్ మోతాదు, రక్షణ దుస్తులు, పొలంలో మళ్లీ ప్రవేశించే సమయం, కోతకు ముందు నిరీక్షణ కాలం పాటించండి. మందులు కలపవద్దు; ఈ ఫోటో ఆధారంగా మాత్రమే పిచికారీ చేయవద్దు."
+    },
+    {
+      "id": "potato_late_signs",
+      "section": "care",
+      "labels": [
+        "potato_late_blight"
+      ],
+      "source": "tnau_potato_late",
+      "en": "Look for wet-looking leaf patches that darken, white growth beneath leaves, and affected stems. If these signs spread quickly, contact an agricultural officer promptly for a late-blight assessment.",
+      "ta": "ஈரமானது போல் தோன்றி கருமையாகும் இலைப் பகுதிகள், இலையின் அடியில் வெள்ளை வளர்ச்சி, தண்டு பாதிப்பைக் கவனியுங்கள். இவை வேகமாகப் பரவினால் பின்பருவ இலைக்கருகல் பரிசோதனைக்கு உடனே வேளாண் அலுவலரை அணுகுங்கள்.",
+      "te": "తడిగా కనిపించి నల్లబడే ఆకు మచ్చలు, ఆకు కింద తెల్లని పెరుగుదల, కాండం దెబ్బతినడం గమనించండి. ఇవి వేగంగా వ్యాపిస్తే ఆలస్యపు ఆకు మాడు తెగులు పరిశీలన కోసం వెంటనే వ్యవసాయ అధికారిని సంప్రదించండి."
+    },
+    {
+      "id": "potato_late_control",
+      "section": "treatment",
+      "labels": [
+        "potato_late_blight"
+      ],
+      "source": "manitoba_potato_late",
+      "en": "Late-blight control relies on early protection and reducing infection sources. Fungicides cannot eradicate an established outbreak. Get a field assessment promptly instead of expecting a spray to cure badly affected plants.",
+      "ta": "பின்பருவ இலைக்கருகலைக் கட்டுப்படுத்த ஆரம்பப் பாதுகாப்பும் நோய் மூலங்களைக் குறைப்பதும் அவசியம். பரவிவிட்ட நோயை பூஞ்சைக்கொல்லிகள் முற்றிலும் அழிக்க முடியாது. கடுமையாகப் பாதித்த செடிகளை தெளிப்பு குணப்படுத்தும் என எதிர்பார்க்காமல் உடனே வயல் ஆய்வுக்கு உதவி பெறுங்கள்.",
+      "te": "ఆలస్యపు ఆకు మాడు తెగులు నియంత్రణకు ముందస్తు రక్షణ, వ్యాధి మూలాలను తగ్గించడం ముఖ్యం. బాగా వ్యాపించిన తెగులును శిలీంద్రనాశినులు పూర్తిగా తొలగించలేవు. తీవ్రంగా దెబ్బతిన్న మొక్కలు పిచికారీతో నయమవుతాయని ఆశించకుండా వెంటనే పొలాన్ని పరిశీలింపజేయండి."
+    },
+    {
+      "id": "potato_late_seed",
+      "section": "prevention",
+      "labels": [
+        "potato_late_blight"
+      ],
+      "source": "manitoba_potato_late",
+      "en": "Use healthy, preferably certified seed tubers next season. Remove unwanted potato plants and discarded tuber piles that can carry infection; ask locally about safe disposal.",
+      "ta": "அடுத்த பருவத்தில் ஆரோக்கியமான, இயன்றால் சான்றளிக்கப்பட்ட விதைக் கிழங்குகளைப் பயன்படுத்துங்கள். நோய் தங்கக்கூடிய தானாக வளர்ந்த உருளைச் செடிகள் மற்றும் கைவிடப்பட்ட கிழங்குக் குவியல்களை அகற்றுங்கள்; பாதுகாப்பான அகற்றம் பற்றி உள்ளூரில் கேளுங்கள்.",
+      "te": "తదుపరి సీజన్‌లో ఆరోగ్యమైన, వీలైతే ధృవీకరించిన విత్తన దుంపలు వాడండి. వ్యాధికి ఆశ్రయమయ్యే స్వయంగా మొలిచిన బంగాళాదుంప మొక్కలు, పారేసిన దుంపల కుప్పలు తొలగించండి; సురక్షిత పారవేత గురించి స్థానికంగా అడగండి."
+    },
+    {
+      "id": "potato_late_water",
+      "section": "prevention",
+      "labels": [
+        "potato_late_blight"
+      ],
+      "source": "manitoba_potato_late",
+      "en": "Plan irrigation to avoid prolonged leaf wetness. Keep tubers covered with soil by proper earthing-up, and check persistently damp parts of the field closely.",
+      "ta": "இலைகள் நீண்ட நேரம் ஈரமாக இருப்பதைத் தவிர்க்க நீர்ப்பாசனத்தைத் திட்டமிடுங்கள். முறையாக மண் அணைத்து கிழங்குகளை மூடுங்கள்; நீண்ட நேரம் ஈரமாக இருக்கும் வயல் பகுதிகளை உற்றுப் பாருங்கள்.",
+      "te": "ఆకులు ఎక్కువసేపు తడిగా ఉండకుండా నీటిపారుదల ప్రణాళిక చేయండి. సరిగ్గా మట్టి ఎగదోసి దుంపలను కప్పండి; ఎక్కువసేపు తడిగా ఉండే పొలం భాగాలను జాగ్రత్తగా పరిశీలించండి."
+    },
+    {
+      "id": "potato_late_variety",
+      "section": "prevention",
+      "labels": [
+        "potato_late_blight"
+      ],
+      "source": "tnau_potato_crop",
+      "en": "For the next planting, ask about locally suitable late-blight-resistant varieties. TNAU names Kufri Jyothi, Kufri Malar and Kufri Thangam; suitability depends on your growing area.",
+      "ta": "அடுத்த நடவுக்கு உள்ளூருக்கு ஏற்ற பின்பருவ இலைக்கருகல் எதிர்ப்புத் திறனுள்ள ரகங்களைக் கேளுங்கள். TNAU குஃப்ரி ஜோதி, குஃப்ரி மலர், குஃப்ரி தங்கம் ரகங்களைக் குறிப்பிடுகிறது; பொருத்தம் உங்கள் பகுதிக்கு ஏற்ப மாறும்.",
+      "te": "తదుపరి నాటుకు మీ ప్రాంతానికి సరిపోయే ఆలస్యపు ఆకు మాడు తెగులును తట్టుకునే రకాల గురించి అడగండి. TNAU కుఫ్రీ జ్యోతి, కుఫ్రీ మలర్, కుఫ్రీ తంగం పేర్లను సూచిస్తుంది; అనుకూలత మీ సాగు ప్రాంతంపై ఆధారపడుతుంది."
+    },
+    {
+      "id": "potato_late_storage",
+      "section": "care",
+      "labels": [
+        "potato_late_blight"
+      ],
+      "source": "tnau_potato_late",
+      "en": "At harvest, avoid injuring tubers. Keep visibly diseased tubers out of storage with healthy potatoes and get advice on handling the affected crop.",
+      "ta": "அறுவடையில் கிழங்குகளைக் காயப்படுத்தாதீர்கள். நோய் தெரியும் கிழங்குகளை ஆரோக்கியமான கிழங்குகளுடன் சேமிக்காதீர்கள்; பாதித்த பயிரைக் கையாள ஆலோசனை பெறுங்கள்.",
+      "te": "కోత సమయంలో దుంపలకు గాయాలు కాకుండా చూడండి. తెగులు కనిపించే దుంపలను ఆరోగ్యమైన వాటితో నిల్వ చేయవద్దు; దెబ్బతిన్న పంటను ఎలా నిర్వహించాలో సలహా తీసుకోండి."
+    },
+    {
+      "id": "potato_rotation",
+      "section": "prevention",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "source": "pnw_potato_early",
+      "en": "Plan a break from potatoes in this field between crops. Discuss a suitable rotation with your local officer to reduce disease carry-over.",
+      "ta": "பருவங்களுக்கு இடையில் இந்த வயலில் உருளைக்கிழங்கு பயிரிடுவதைத் தவிர்த்து இடைவெளி கொடுக்கத் திட்டமிடுங்கள். நோய் தொடர்வதைக் குறைக்க ஏற்ற பயிர் சுழற்சியை உள்ளூர் அலுவலருடன் ஆலோசியுங்கள்.",
+      "te": "ఈ పొలంలో పంటల మధ్య కొంతకాలం బంగాళాదుంప సాగుకు విరామం ఇవ్వండి. వ్యాధి కొనసాగకుండా తగిన పంట మార్పిడి గురించి స్థానిక అధికారితో చర్చించండి."
+    },
+    {
+      "id": "potato_early_dry",
+      "section": "prevention",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "source": "pnw_potato_early",
+      "en": "If you use sprinklers, water when leaves can dry promptly. Avoid watering during cool, cloudy periods that leave foliage wet for longer.",
+      "ta": "தெளிப்பு நீர்ப்பாசனம் செய்தால் இலைகள் விரைவில் காயும் நேரத்தில் பாசனம் செய்யுங்கள். இலைகள் நீண்ட நேரம் ஈரமாக இருக்கும் குளிர்ந்த, மேகமூட்டமான நேரங்களைத் தவிருங்கள்.",
+      "te": "స్ప్రింక్లర్లు వాడితే ఆకులు త్వరగా ఆరే సమయంలో నీరు పెట్టండి. ఆకులు ఎక్కువసేపు తడిగా ఉండే చల్లని, మేఘావృత సమయాల్లో నీరు పెట్టడం నివారించండి."
+    },
+    {
+      "id": "potato_early_harvest",
+      "section": "care",
+      "labels": [
+        "potato_early_blight"
+      ],
+      "source": "pnw_potato_early",
+      "en": "Harvest when tubers are mature and handle them gently to avoid bruises. Ask for suitable storage conditions for the harvested crop.",
+      "ta": "கிழங்குகள் முதிர்ந்த பிறகு அறுவடை செய்து காயம் ஏற்படாமல் மெதுவாகக் கையாளுங்கள். அறுவடை செய்த பயிருக்கு ஏற்ற சேமிப்பு நிலைகளைப் பற்றிக் கேளுங்கள்.",
+      "te": "దుంపలు పరిపక్వమైనప్పుడు కోయండి; దెబ్బలు తగలకుండా జాగ్రత్తగా నిర్వహించండి. కోసిన పంటకు తగిన నిల్వ పరిస్థితుల గురించి అడగండి."
+    }
+  ]
+}

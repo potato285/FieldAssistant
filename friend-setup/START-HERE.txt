@@ -1,0 +1,119 @@
+FIELD ASSISTANT 0.4.0 - FRIEND SETUP
+Built with Llama
+
+This version removes the example-photo and damage-status sections and adds speech pause/resume,
+read-from-start and stop. It uses installed Android offline voices; voice quality
+and availability depend on the phone's speech engine. These voice packs are not
+redistributable app assets and are NOT in this ZIP. Install them once using the
+app's "Set up offline voices" button, then return to Field Assistant.
+
+This folder installs the Android app AND its offline Llama advisory model.
+No Android Studio, Java, Gradle, paid account or API key is needed.
+The computer installs the app onto a phone; it does not run the Android app itself.
+
+WHAT YOU NEED
+- An ARM64 Android phone with Android 9 or newer and 4 KB memory pages.
+  Tested on Nothing A001, Android 16, roughly 8 GB RAM. Use that memory class as
+  a practical target; other phones/lower RAM are not validated. The installer
+  rejects 16 KB-page devices because this native runtime has not been validated
+  for them. iPhones and 32-bit-only Android phones cannot run this build.
+- Around 3 GB free phone storage and 3 GB free computer storage for this package.
+  More free space may be needed while extracting the ZIP.
+- A USB cable that carries data, not just charging.
+- Python 3.8 or newer on the computer: https://www.python.org/downloads/
+  On Windows, choose the installer's option to add Python to PATH.
+- Internet on the computer for the first small Android Platform-Tools download.
+  The APK and the large Llama model are ALREADY INCLUDED. App use needs no internet.
+  If adb is already installed or platform-tools is supplied, setup can run offline too.
+
+1. EXTRACT THE ZIP
+   Right-click the ZIP and extract ALL files first. Do not run inside a ZIP preview.
+   Keep install.py, files.json, the APK, models and licenses in this same folder.
+
+2. ENABLE USB DEBUGGING ON THE PHONE
+   Open Settings > About phone > tap Build number seven times.
+   Your phone may ask for its screen-lock PIN.
+   Open Settings > System > Developer options > enable USB debugging.
+   Menu names differ by manufacturer; search Settings for Build number/Developer options.
+   Connect the phone to the computer and unlock the screen.
+   Accept "Allow USB debugging?" on the PHONE for your trusted computer.
+   Leave mobile data/hotspot on if the computer uses the phone's internet.
+   This installer does not change airplane mode, mobile data, Wi-Fi or hotspot.
+
+3. RUN SETUP ON THE COMPUTER
+   WINDOWS: double-click Install-Windows.cmd.
+   MAC: open Terminal, type "python3 " (with a space), drag install.py into
+        the Terminal window, and press Enter. Or double-click Install-Mac.command.
+        If macOS blocks that launcher, use the Terminal command instead.
+   LINUX: open a terminal in this extracted folder and run: python3 install.py
+
+   The script verifies all files, downloads official Google adb if needed, checks
+   the connected phone, installs the APK, and copies/verifies both model files.
+   Keep only ONE phone connected. Keep it unlocked and the cable connected.
+   The large model transfer/check can take several minutes. Wait for SETUP COMPLETE.
+   Existing matching model files are checked and skipped. Rerunning is safe.
+
+4. TRY THE APP
+   Field Assistant opens automatically.
+   Choose your crop and use "Choose from gallery" with a clear leaf photograph.
+   Wait for "Your next steps are ready". There is no built-in example-photo button.
+   In this test build, expand Developer details and check:
+       Engine: Llama 3.2 ... ExecuTorch
+       Fallback: false
+   Try your own photo through Choose from gallery and select the correct crop.
+   English, Tamil and Telugu text are included. For speech:
+   - Switch to the desired language and tap "Set up offline voices" under the advice.
+   - Install that language in your speech engine (English India, Tamil India,
+     Telugu India on the tested Google engine); this one-time download needs internet.
+   - Return to Field Assistant. If the voice is still unavailable, close/reopen the app.
+   - Tap Listen, Pause reading, Resume reading, Read from the start, or Stop.
+   - Use the phone's MEDIA volume. Speech pauses when leaving the app or losing
+     audio focus; changing language/photo/crop stops old speech.
+   Download all three voices once to use all speech options offline.
+   An engine without a local Tamil/Telugu voice cannot provide those speech options.
+   You can disconnect USB and disable USB debugging after setup.
+   Uninstalling the app or clearing its storage deletes the model; rerun setup then.
+
+IF SETUP FAILS
+- "No devices" / unauthorized: unlock the phone, accept the debugging prompt,
+  try another USB data cable/port, choose USB File transfer if needed, and rerun.
+- Windows may need the phone manufacturer's official USB driver. See Google's guide:
+  https://developer.android.com/studio/run/oem-usb
+- "Permission denied" on Linux: install your distribution's Android udev rules.
+- "run-as: package not debuggable" or signature mismatch: use the APK included HERE.
+  Do not uninstall another existing app automatically; ask the sender before replacing
+  an installation whose signing key differs. This installer never uninstalls apps.
+- Download/certificate problem: download Android Platform-Tools from
+  https://developer.android.com/tools/releases/platform-tools
+  Extract its platform-tools folder alongside install.py, then rerun.
+- Python missing: install it using the link above and reopen the launcher.
+- Unsupported phone / native crash: this prototype was tested on Nothing A001,
+  Android 16 with 4 KB memory pages. Other devices are unverified; passing basic
+  installer checks does not prove the model will fit memory or run successfully.
+- For a read-only setup check: python3 install.py --check-only
+  On Windows use: py -3 install.py --check-only
+- If needed, specify adb manually: python3 install.py --adb /full/path/to/adb
+
+ABOUT THIS PROTOTYPE
+The app includes real 54-class leaf inference and on-device Llama via ExecuTorch.
+Llama selects sourced steps and attempts a separate English explanation.
+English/Tamil/Telugu action wording is bundled; local-language Llama translation
+is not claimed. Failed explanations are omitted with a clear message.
+It is an early prototype. Crop identification and disease findings can be wrong.
+Sapodilla/mealybug and damage severity are unsupported. Consult an agricultural
+officer before treatment. Crop-specific guidance currently covers tomato/potato
+early blight and potato late blight in Tamil Nadu; other findings get general
+observation/referral reminders. Named potato fungicide options require confirmation
+with a local officer and the current product label. No dose or spray schedule is supplied.
+
+LICENSES AND SOURCES
+Read the included licenses, Llama agreement and acceptable-use policy before use.
+Llama 3.2 is licensed under the Llama 3.2 Community License,
+Copyright (c) Meta Platforms, Inc. All Rights Reserved.
+Source export: executorch-community/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8-ET
+https://huggingface.co/executorch-community/Llama-3.2-1B-Instruct-SpinQuant_INT4_EO8-ET
+Pinned revision: 911221e0f49d3354cbd4697a9c09feee25cadec7
+The included files.json records checksums and sizes of the APK/model files.
+Google Platform-Tools is downloaded from Google's official server during setup,
+under its own terms. See its source.properties/NOTICE after download.
+No account data, personal photos, passwords or private signing keys are included.

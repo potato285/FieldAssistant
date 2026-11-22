@@ -1,0 +1,49 @@
+Third-party assets in Field Assistant
+
+Plantulus Doctor — KumarjitC
+Model: EfficientNetV2-B0, 54 classes, float16 weights / float32 input and output.
+https://huggingface.co/KumarjitC/plantulus-doctor
+Revision: ee2cb607a33fefa85ccc567988c98fc605fa36bd
+Publisher declares MIT in the model card; no separate LICENSE file is supplied upstream.
+The original model card and metadata are preserved alongside this notice. This is a
+third-party pretrained model, not an original model trained by the Field Assistant team.
+Training datasets are not redistributed. Their complete provenance/rights have not
+been independently audited. Do not interpret this prototype as a licensing audit.
+
+Regression test photograph (source/test archive only, not the farmer APK) — PlantVillage
+Tomato___Early_blight / 0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B 8389.JPG
+Authors: Sharada P. Mohanty, David P. Hughes, Marcel Salathe / PlantVillage / EPFL.
+https://github.com/spMohanty/PlantVillage-Dataset
+https://huggingface.co/datasets/mohanty/PlantVillage
+CC BY-SA 3.0, as declared by the dataset author's Hugging Face card.
+https://creativecommons.org/licenses/by-sa/3.0/
+The test-only original photograph is unmodified; resizing/cropping happens in memory
+for inference. The image and any distributed adaptation retain CC BY-SA 3.0.
+Citation: Mohanty, Hughes, Salathe (2016), Using Deep Learning for Image-Based
+Plant Disease Detection, Frontiers in Plant Science 7, doi:10.3389/fpls.2016.01419.
+This example may overlap the model's training data. It is a runtime smoke test,
+not an independent accuracy evaluation or a field-performance claim.
+
+Llama 3.2 is licensed under the Llama 3.2 Community License, Copyright © Meta
+Platforms, Inc. All Rights Reserved.
+Built with Llama — only when a provisioned Llama model successfully executes.
+Full agreement and acceptable-use policy are included in this directory.
+Model exports are provisioned separately; never imply model availability from
+the presence of the ExecuTorch runtime alone.
+
+AndroidX / Jetpack Compose: Apache-2.0, https://android.googlesource.com/platform/frameworks/support/
+Kotlin: Apache-2.0, https://github.com/JetBrains/kotlin
+LiteRT: Apache-2.0, https://github.com/google-ai-edge/LiteRT
+ExecuTorch: BSD-3-Clause, https://github.com/pytorch/executorch
+See dependency POMs and upstream repositories for complete third-party notices.
+
+Regression test photograph (source/test archive only, not the farmer APK):
+PlantVillage potato early blight; same authors, attribution and CC BY-SA 3.0 license
+as the tomato sample above. Exact filename, URL and SHA-256: evidence/potato-photo-source.json.
+The test image may overlap training and does not establish independent field accuracy.
+
+Agricultural guidance: original short factual summaries and prototype translations.
+TNAU Agritech, UC IPM, PNW Extension (Oregon State/Washington State/University of Idaho),
+and Manitoba Agriculture are credited by source title, URL, date and scope in guidance.json.
+No source article, pesticide table or source image is redistributed. These summaries
+are not endorsements or a current product registration audit.

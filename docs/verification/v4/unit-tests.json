@@ -1,0 +1,26 @@
+[
+  {
+    "name": "org.fieldassistant.SpeechTextTest",
+    "tests": "2",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "org.fieldassistant.ResultAggregatorTest",
+    "tests": "7",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "org.fieldassistant.ExpandedGuidanceTest",
+    "tests": "4",
+    "failures": "0",
+    "errors": "0"
+  },
+  {
+    "name": "org.fieldassistant.AdvisoryGuardTest",
+    "tests": "6",
+    "failures": "0",
+    "errors": "0"
+  }
+]

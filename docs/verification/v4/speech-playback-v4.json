@@ -1,0 +1,34 @@
+{
+  "voices": [
+    {
+      "language": "en",
+      "voice": "en-IN-language",
+      "paused_position_ms": 821,
+      "held_position_ms": 821,
+      "prepare_pause_passed": true,
+      "resume_passed": true,
+      "restart_passed": true
+    },
+    {
+      "language": "ta",
+      "voice": "ta-IN-language",
+      "paused_position_ms": 831,
+      "held_position_ms": 831,
+      "prepare_pause_passed": true,
+      "resume_passed": true,
+      "restart_passed": true
+    },
+    {
+      "language": "te",
+      "voice": "te-IN-language",
+      "paused_position_ms": 845,
+      "held_position_ms": 845,
+      "prepare_pause_passed": true,
+      "resume_passed": true,
+      "restart_passed": true
+    }
+  ],
+  "sentence_sequence_completed": true,
+  "human_pronunciation_review": false,
+  "network_settings_changed": false
+}

@@ -1,0 +1,102 @@
+{
+  "model": "Plantulus Doctor \/ EfficientNetV2-B0 fp16 \/ ee2cb607",
+  "sha256": "3f9b1ef6e7bcc603c6844429ae4ac28607cbfb48fd7b1f856362c824a29a3e65",
+  "input": "PlantVillage tomato early blight photograph; may overlap training data",
+  "input_shape": "[1,224,224,3] FLOAT32 RGB 0..255",
+  "output_shape": "[1,54] FLOAT32 softmax",
+  "device": "Nothing A001",
+  "abi": "arm64-v8a",
+  "android": "16",
+  "airplane_mode": 1,
+  "process_pss_kb_after_engine_close": 89369,
+  "runs": [
+    {
+      "run": 0,
+      "inference_ms": 80.607077,
+      "preprocess_ms": 50.50277,
+      "top3": [
+        {
+          "label": "tomato_early_blight",
+          "crop": "Tomato",
+          "score": 0.92736334
+        },
+        {
+          "label": "aloe_leafspot",
+          "crop": "Aloe",
+          "score": 0.0034415002
+        },
+        {
+          "label": "apple_apple_scab",
+          "crop": "Apple",
+          "score": 0.002905316
+        }
+      ]
+    },
+    {
+      "run": 1,
+      "inference_ms": 51.324693,
+      "preprocess_ms": 27.157154,
+      "top3": [
+        {
+          "label": "tomato_early_blight",
+          "crop": "Tomato",
+          "score": 0.92736334
+        },
+        {
+          "label": "aloe_leafspot",
+          "crop": "Aloe",
+          "score": 0.0034415002
+        },
+        {
+          "label": "apple_apple_scab",
+          "crop": "Apple",
+          "score": 0.002905316
+        }
+      ]
+    },
+    {
+      "run": 2,
+      "inference_ms": 51.141231,
+      "preprocess_ms": 6.912692,
+      "top3": [
+        {
+          "label": "tomato_early_blight",
+          "crop": "Tomato",
+          "score": 0.92736334
+        },
+        {
+          "label": "aloe_leafspot",
+          "crop": "Aloe",
+          "score": 0.0034415002
+        },
+        {
+          "label": "apple_apple_scab",
+          "crop": "Apple",
+          "score": 0.002905316
+        }
+      ]
+    },
+    {
+      "run": 3,
+      "inference_ms": 51.257462,
+      "preprocess_ms": 6.957308,
+      "top3": [
+        {
+          "label": "tomato_early_blight",
+          "crop": "Tomato",
+          "score": 0.92736334
+        },
+        {
+          "label": "aloe_leafspot",
+          "crop": "Aloe",
+          "score": 0.0034415002
+        },
+        {
+          "label": "apple_apple_scab",
+          "crop": "Apple",
+          "score": 0.002905316
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+Field Assistant 0.4.0 - Built with Llama
+Checking the APK and model files. The large model may take a moment...
+Verified field-assistant-debug.apk
+Verified models/llama.pte
+Verified models/tokenizer.model
+Android Debug Bridge version 1.0.41
+Version 37.0.3-16887417
+Installed as <PROJECT_ROOT>/tools/android-sdk/platform-tools/adb
+Running on Darwin 24.5.0 (arm64)
+Phone: A001; Android API 36
+Memory: MemTotal:        7581724 kB; page size: 4096
+Basic ARM/API/page checks passed. Only Nothing A001 (~8 GB RAM class) has been validated; other phones may run out of memory or fail.
+Installing the debug app (existing app data is retained)...
+Performing Streamed Install
+Success
+llama.pte already installed and verified.
+tokenizer.model already installed and verified.
+Starting: Intent { cmp=org.fieldassistant/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: org.fieldassistant/.MainActivity
+TotalTime: 706
+WaitTime: 708
+Complete
+
+SETUP COMPLETE. Choose your crop and a clear leaf photo from the gallery; wait for 'Your next steps are ready'.
+Open Developer details to confirm Llama and Fallback: false.
+For speech, choose each language and use Set up offline voices if needed. Voice packs are installed by your phone's speech engine, not included in this ZIP.
+The app now works offline. You can disconnect USB and turn USB debugging off.
+Do not uninstall or clear app data: that deletes the installed Llama model.

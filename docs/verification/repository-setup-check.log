@@ -1,0 +1,18 @@
+Using your own APK; caller is responsible for its origin and debug signing.
+Llama download/use is governed by the included Llama 3.2 license and acceptable-use policy.
+Verified existing llama.pte
+Llama download/use is governed by the included Llama 3.2 license and acceptable-use policy.
+Verified existing tokenizer.model
+Field Assistant 0.4.0 - Built with Llama
+Checking the APK and model files. The large model may take a moment...
+Verified field-assistant-debug.apk
+Verified models/llama.pte
+Verified models/tokenizer.model
+Android Debug Bridge version 1.0.41
+Version 37.0.3-16887417
+Installed as <PROJECT_ROOT>/tools/android-sdk/platform-tools/adb
+Running on Darwin 24.5.0 (arm64)
+Phone: A001; Android API 36
+Memory: MemTotal:        7581724 kB; page size: 4096
+Basic ARM/API/page checks passed. Only Nothing A001 (~8 GB RAM class) has been validated; other phones may run out of memory or fail.
+CHECK PASSED. No APK installed or phone settings changed.

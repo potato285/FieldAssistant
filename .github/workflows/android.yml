@@ -1,0 +1,31 @@
+name: Android source checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install pinned SDK packages
+        run: sdkmanager 'platforms;android-35' 'build-tools;34.0.0'
+      - name: Download and verify vision model
+        run: |
+          python3 tools/download_models.py vision
+          python3 tools/verify-assets.py
+      - name: Build, unit tests and lint (no device inference claim)
+        run: ./gradlew --no-daemon assembleDebug testDebugUnitTest lintDebug
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-and-lint-reports
+          path: app/build/reports/

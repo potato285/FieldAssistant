@@ -1,0 +1,23 @@
+{
+  "input": "PlantVillage potato photo through real gallery callback\/content URI",
+  "actual_system_picker_selection_automated": false,
+  "automatic_llama": true,
+  "label": "potato_early_blight",
+  "score": 0.87629944,
+  "actions": [
+    "expert",
+    "potato_debris",
+    "potato_seed",
+    "potato_early_signs",
+    "potato_water_feed",
+    "potato_early_control",
+    "potato_fungicide",
+    "potato_rotation",
+    "potato_early_dry",
+    "potato_early_harvest"
+  ],
+  "generated_english_explanation": "If you have early blight on your potatoes, removing infected plant debris can help prevent the disease from spreading. Asking your agricultural officer for safe disposal methods can also help. \n\nEarly blight often affects stressed plants, so keeping them healthy and well-watered can help prevent the disease.",
+  "telugu_ui_checked": true,
+  "elapsed_ms": 22876,
+  "debug_hidden_by_default": true
+}
