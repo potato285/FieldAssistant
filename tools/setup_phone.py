@@ -22,6 +22,7 @@ def main():
     stage.mkdir(parents=True, exist_ok=True)
     for source in (ROOT / 'friend-setup').iterdir():
         if source.is_file(): shutil.copy2(source, stage / source.name)
+    if os.name != 'nt': (stage / 'Install-Mac.command').chmod(0o755)
     shutil.copytree(ROOT / 'app/src/main/assets/licenses', stage / 'licenses', dirs_exist_ok=True)
     manifest = {}
     apk_entry = json.loads((ROOT / 'models/release.json').read_text(encoding='utf-8'))

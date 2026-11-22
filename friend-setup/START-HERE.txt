@@ -1,6 +1,10 @@
 FIELD ASSISTANT 0.4.0 - FRIEND SETUP
 Built with Llama
 
+If you cloned the GitHub repository, first run python3 tools/setup_phone.py
+from the repository root (Windows: py -3 tools/setup_phone.py). This file
+describes the prepared installer folder containing the APK, models and files.json.
+
 This version removes the example-photo and damage-status sections and adds speech pause/resume,
 read-from-start and stop. It uses installed Android offline voices; voice quality
 and availability depend on the phone's speech engine. These voice packs are not

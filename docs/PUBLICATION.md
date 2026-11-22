@@ -43,3 +43,9 @@ The first GitHub Actions run stopped before compilation because the setup action
 requested the obsolete SDK package `tools`. The workflow now explicitly requests
 `platform-tools` plus the pinned platform/build-tools packages. The initial failure
 is retained in Actions history rather than reported as an application build failure.
+
+The corrected [Linux GitHub Actions run](https://github.com/potato285/FieldAssistant/actions/runs/45006911065)
+passed: SDK setup, a fresh upstream vision download/checksum verification, Gradle build,
+unit tests and lint. [Machine-readable run status](verification/github-ci.json).
+This adds an independent Linux **build** result; it is not a Windows/Linux phone-setup
+or Android-device inference test.

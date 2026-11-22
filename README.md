@@ -227,6 +227,7 @@ belongs to their respective upstream authors.
 ## Verification and remaining work
 
 - v0.4 debug/release compilation passed; 19 host tests passed; lint: 0 errors/9 warnings.
+  A clean source build and an independent [Linux GitHub Actions build](https://github.com/potato285/FieldAssistant/actions/runs/45006911065) also passed.
 - Real potato content-URI photo → `potato_early_blight` → Llama advice passed;
   Llama took 22.876 seconds in the recorded final run. This uses a test photograph
   that may overlap training and is not an independent accuracy evaluation.
