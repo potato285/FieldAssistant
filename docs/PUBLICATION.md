@@ -36,3 +36,10 @@ downloader as a fallback; published-download checks are recorded separately belo
 No Windows/Linux phone-setup success or first-time installation on another phone is
 inferred from these checks. No signing keys, account credentials, personal photos,
 SDK/tool caches or private project notes are published.
+
+## CI setup correction
+
+The first GitHub Actions run stopped before compilation because the setup action
+requested the obsolete SDK package `tools`. The workflow now explicitly requests
+`platform-tools` plus the pinned platform/build-tools packages. The initial failure
+is retained in Actions history rather than reported as an application build failure.
