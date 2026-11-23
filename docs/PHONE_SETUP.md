@@ -80,7 +80,7 @@ py -3 tools/setup_phone.py
 
 The command:
 
-1. Downloads the v0.4.0 APK from this repository's GitHub Release.
+1. Downloads the v0.4.1 APK from this repository's GitHub Release.
 2. Downloads Llama `.pte` and tokenizer from a pinned upstream revision, falling
    back to byte-identical GitHub Release mirrors if the upstream CDN is unreachable.
 3. Verifies each size and SHA-256 against committed manifests. Existing valid files
@@ -132,7 +132,7 @@ options. Text and model inference still work. A one-time voice download needs in
 ## 6. Verify actual Llama operation
 
 1. Choose the correct crop and a clear, locally stored leaf photo. Potato early/late
-   blight has the most complete demonstration guidance.
+   blight and tomato early blight have expanded demonstration guidance.
 2. Wait for image analysis and advice. On the tested phone Llama commonly took
    approximately 20–25 seconds for the expanded potato path; other phones vary.
 3. Look for **Your next steps are ready**. In the debug build expand **Developer details**:
@@ -156,7 +156,7 @@ project owner's successful manual offline test are documented in
 
 ## 7. Updates and removal
 
-Use the same setup command for this pinned version; matching model files are reused.
+After `git pull`, use the same setup command for the current pinned version; matching model files are reused.
 `adb install -r` preserves data when the package/signing key matches. Uninstalling or
 clearing app storage deletes the private Llama model and requires provisioning again.
 

@@ -89,3 +89,10 @@ confirmation; no chemical dose, mixing recipe or spray schedule is supplied.
 Dependency artifacts may have additional notices; consult their upstream distributions.
 A separate license for Field Assistant's original application source has not yet been
 selected. This notice records third-party terms; it does not relicense those materials.
+
+Tomato guidance expanded in v0.4.1 also cites [University of Minnesota Extension](https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/early-blight-in-tomato-and-potato)
+and [UC IPM tomato early blight](https://ipm.ucanr.edu/agriculture/tomato/early-blight/).
+These are short attributed paraphrases, with source scope/access dates recorded in
+`guidance.json`; no US pesticide rates or regional planting calendars are transferred
+to India. The named tomato fungicide discussion is based on the TNAU tomato guide,
+not a new pesticide-registration audit. Agronomist and native-language review remain pending.

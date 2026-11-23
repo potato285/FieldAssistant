@@ -37,7 +37,8 @@ Detailed label metadata: [class_info.json](../app/src/main/assets/vision/class_i
 
 ## Guidance coverage is narrower than classification coverage
 
-- Tomato early blight: sourced practical care/prevention.
+- Tomato early blight: ten sourced care/prevention/treatment-discussion cards in
+  English, Tamil and Telugu (expanded from two in v0.4.1).
 - Potato early and late blight: expanded care, prevention, treatment discussion.
 - Other supported findings: general observation and agricultural-officer referral.
 - Unsupported, conflicting or uncertain findings: no specific treatment claim.

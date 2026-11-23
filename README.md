@@ -3,7 +3,7 @@
 **Phase 1 — proof of concept:** an offline Android crop-health assistant for the
 Bharat AI–SoC Challenge 2026–27.
 
-**Built with Llama.** Current prototype: **v0.4.0**. Native Kotlin/Jetpack Compose;
+**Built with Llama.** Current prototype: **v0.4.1**. Native Kotlin/Jetpack Compose;
 real image inference with LiteRT and real Llama 3.2 inference with ExecuTorch.
 
 **Phase 1 scope:** the pretrained classifier has **54 labels across 19 plants**, but
@@ -43,8 +43,8 @@ occur on real photographs.
   **crop-specific advice covers only the three conditions named above**.
 - Genuine Llama 3.2 1B Instruct SpinQuant INT4 execution through ExecuTorch 0.6.0
   on the ARM CPU, with automatic advice after photo analysis.
-- Sourced care/treatment/prevention for potato early/late blight and narrower tomato
-  early-blight guidance. Compact general reminders accompany these instructions.
+- Sourced care/treatment/prevention for potato early/late blight and tomato early
+  blight. Tomato now has ten specific guidance cards in English, Tamil and Telugu. Compact general reminders accompany these instructions.
 - English/Tamil/Telugu UI and saved guidance; local speech with pause, resume,
   restart-from-beginning and stop. Voice data must be installed once on each phone.
 - Explicit uncertain/unsupported/crop-conflict states and a clearly labeled saved
@@ -101,7 +101,7 @@ Allow 4–5 GB free computer space for downloads/staging (more if building).
 The repository contains source, metadata and download manifests. Large model weights
 are fetched from their original pinned upstream sources, with byte-identical GitHub
 Release mirrors as a network fallback; the installable APK is a
-[GitHub Release asset](https://github.com/potato285/FieldAssistant/releases/tag/v0.4.0).
+[GitHub Release asset](https://github.com/potato285/FieldAssistant/releases/tag/v0.4.1).
 Installing only the APK does **not** install Llama. Follow the full
 [phone setup, voice installation, update and troubleshooting procedure](docs/PHONE_SETUP.md).
 
@@ -245,6 +245,10 @@ belongs to their respective upstream authors.
 
 ## Verification and remaining work
 
+- v0.4.1 expands tomato guidance from two to ten cards. Debug build, 20 host tests
+  and lint passed. No phone was connected for a new on-device test of this content;
+  recorded physical-phone inference and speech measurements below are from v0.4.
+
 - v0.4 debug/release compilation passed; 19 host tests passed; lint: 0 errors/9 warnings.
   A clean source build and an independent [Linux GitHub Actions build](https://github.com/potato285/FieldAssistant/actions/runs/45006911065) also passed.
 - Real potato content-URI photo → `potato_early_blight` → Llama advice passed;
@@ -288,7 +292,7 @@ requirements; the final narrated recording is still outstanding.
 Full [third-party notices](THIRD_PARTY_NOTICES.md), [model download manifest](models/manifest.json),
 [license files](app/src/main/assets/licenses) and [guidance sources](app/src/main/assets/guidance.json)
 are included. No full dataset is redistributed. Agricultural guidance is sourced from
-TNAU, UC IPM, PNW Extension and Manitoba Agriculture. Chemical options are saved,
+TNAU, UC IPM, University of Minnesota Extension, PNW Extension and Manitoba Agriculture. Chemical options are saved,
 conditional discussion points for a local officer/current product label, without
 invented doses or schedules.
 

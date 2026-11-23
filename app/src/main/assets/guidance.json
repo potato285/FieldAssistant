@@ -7,8 +7,8 @@
       "id": "tnau_tomato_early_blight",
       "title": "TNAU Agritech — Tomato early blight",
       "url": "https://agritech.tnau.ac.in/crop_protection/tomato_diseases_2.html",
-      "accessed": "2026-11-21",
-      "scope": "Paraphrased nonchemical crop sanitation and rotation guidance only. No chemical recommendations reproduced."
+      "accessed": "2026-11-23",
+      "scope": "Short sanitation/rotation paraphrases and conditional tomato early-blight fungicide discussion. TNAU page updated June 2023; no current registration audit claimed. Confirm current tomato label and local advice before use. No dose or spray schedule reproduced."
     },
     {
       "id": "prototype_observation",
@@ -58,6 +58,20 @@
       "url": "https://pnwhandbooks.org/plantdisease/host-disease/potato-solanum-tuberosum-early-blight",
       "accessed": "2026-11-22",
       "scope": "Short nonchemical rotation, irrigation and harvest paraphrases; US pesticide uses and rates not used."
+    },
+    {
+      "id": "uc_tomato_early",
+      "title": "UC IPM — Tomato early blight",
+      "url": "https://ipm.ucanr.edu/agriculture/tomato/early-blight/",
+      "accessed": "2026-11-23",
+      "scope": "Short symptom, host-weed and management-timing paraphrases. California pesticide products, rates and regional disease-frequency claims are not transferred to India."
+    },
+    {
+      "id": "umn_tomato_early",
+      "title": "University of Minnesota Extension — Early blight in tomato and potato",
+      "url": "https://extension.umn.edu/agriculture/specialty-crops/vegetable-farming/disease-management/early-blight-in-tomato-and-potato",
+      "accessed": "2026-11-23",
+      "scope": "Short nonchemical irrigation, airflow, mulch and healthy seed/transplant paraphrases; reviewed 2024. US pesticide instructions and regional planting calendars are not used."
     }
   ],
   "actions": [
@@ -109,6 +123,94 @@
       "ta": "தக்காளி முன்பருவ இலைக்கருகல் உறுதி செய்யப்பட்டால், அடுத்த நடவுக்கு முன் பொருத்தமான பயிர் சுழற்சியைப் பற்றி உள்ளூர் வேளாண் அலுவலருடன் ஆலோசிக்கவும்.",
       "te": "టమాటాలో ముందస్తు ఆకు మాడు తెగులు నిర్ధారణ అయితే, తదుపరి నాటుకు ముందు తగిన పంట మార్పిడి గురించి వ్యవసాయ అధికారిని అడగండి.",
       "section": "prevention"
+    },
+    {
+      "id": "tomato_early_signs",
+      "section": "care",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "uc_tomato_early",
+      "en": "Look at older leaves for brown spots with rings. Check stems and fruit near the stalk too. Similar-looking problems need an agricultural officer to confirm the cause.",
+      "ta": "முதிர்ந்த இலைகளில் வளையங்களுடன் பழுப்புப் புள்ளிகள் உள்ளனவா பாருங்கள். தண்டுகளையும் காம்புக்கு அருகிலுள்ள பழப் பகுதியையும் பாருங்கள். இதே போன்ற அறிகுறிகளுக்கான காரணத்தை வேளாண் அலுவலர் உறுதி செய்ய வேண்டும்.",
+      "te": "ముదిరిన ఆకులపై వలయాలతో గోధుమ రంగు మచ్చలు ఉన్నాయేమో చూడండి. కాండాన్ని, పండు తొడిమ దగ్గర కూడా చూడండి. ఇలాంటి లక్షణాలకు కారణాన్ని వ్యవసాయ అధికారి నిర్ధారించాలి."
+    },
+    {
+      "id": "tomato_water",
+      "section": "prevention",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "umn_tomato_early",
+      "en": "Water the soil near the roots, preferably by drip irrigation. Avoid wetting leaves or handling plants while wet.",
+      "ta": "முடிந்தால் சொட்டு நீர்ப்பாசனம் மூலம் வேருக்கு அருகிலுள்ள மண்ணில் நீர் பாய்ச்சுங்கள். இலைகளை நனைப்பதையும் ஈரமான செடிகளைக் கையாளுவதையும் தவிருங்கள்.",
+      "te": "వీలైతే బిందు సేద్యంతో వేర్ల దగ్గర మట్టికి నీరు పెట్టండి. ఆకులను తడపడం, తడిగా ఉన్న మొక్కలను తాకడం నివారించండి."
+    },
+    {
+      "id": "tomato_airflow",
+      "section": "prevention",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "umn_tomato_early",
+      "en": "Use supports and suitable spacing so air moves between plants and leaves dry sooner.",
+      "ta": "செடிகளுக்கு இடையில் காற்றோட்டம் கிடைத்து இலைகள் விரைவில் காய, தாங்குக் குச்சிகளையும் பொருத்தமான இடைவெளியையும் பயன்படுத்துங்கள்.",
+      "te": "మొక్కల మధ్య గాలి ఆడి ఆకులు త్వరగా ఆరేలా కర్రలతో ఆసరా ఇచ్చి, తగిన దూరం ఉంచండి."
+    },
+    {
+      "id": "tomato_mulch",
+      "section": "prevention",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "umn_tomato_early",
+      "en": "Cover soil beneath plants with suitable mulch to reduce soil splashing onto leaves.",
+      "ta": "மண் இலைகள் மீது தெறிப்பதைக் குறைக்க, செடிகளுக்குக் கீழுள்ள மண்ணில் பொருத்தமான மூடாக்கு இடுங்கள்.",
+      "te": "మట్టి ఆకులపై చిమ్మకుండా మొక్కల కింద నేలపై తగిన మల్చింగ్ పొర వేయండి."
+    },
+    {
+      "id": "tomato_planting",
+      "section": "prevention",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "umn_tomato_early",
+      "en": "For the next planting, choose disease-free seed and healthy seedlings. Ask locally about suitable disease-resistant varieties.",
+      "ta": "அடுத்த நடவுக்கு நோயற்ற விதைகளையும் ஆரோக்கியமான நாற்றுகளையும் தேர்வு செய்யுங்கள். ஏற்ற நோய் எதிர்ப்புத் திறனுள்ள இரகங்களைப் பற்றி உள்ளூரில் ஆலோசனை பெறுங்கள்.",
+      "te": "తదుపరి నాటుకు రోగరహిత విత్తనాలు, ఆరోగ్యమైన నారు ఎంచుకోండి. అనువైన తెగులు నిరోధక రకాల గురించి స్థానికంగా అడగండి."
+    },
+    {
+      "id": "tomato_weeds",
+      "section": "prevention",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "uc_tomato_early",
+      "en": "Remove unwanted tomato and potato plants left from earlier crops. Ask your officer to identify related weeds that can carry infection.",
+      "ta": "முந்தைய பயிரிலிருந்து தானாக முளைத்த தேவையற்ற தக்காளி, உருளைக்கிழங்கு செடிகளை அகற்றுங்கள். நோயைத் தாங்கும் உறவினக் களைகளை அடையாளம் காண அலுவலரிடம் உதவி கேளுங்கள்.",
+      "te": "గత పంట నుంచి వాటంతట అవే వచ్చిన అవసరం లేని టమాటా, బంగాళాదుంప మొక్కలను తొలగించండి. తెగులును మోసే సంబంధిత కలుపు మొక్కలను గుర్తించేందుకు అధికారిని అడగండి."
+    },
+    {
+      "id": "tomato_early_control",
+      "section": "treatment",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "uc_tomato_early",
+      "en": "If early blight is confirmed, ask promptly whether a fungicide is needed when wet conditions favour spread. Treatment decisions depend on field conditions; a photo alone is not enough.",
+      "ta": "முன்பருவ இலைக்கருகல் உறுதியானால், ஈரமான சூழலில் நோய் பரவும் வாய்ப்பு இருக்கும்போது பூஞ்சைக்கொல்லி தேவையா என்று விரைவில் கேளுங்கள். சிகிச்சை முடிவு வயல் நிலையைப் பொறுத்தது; ஒரு படம் மட்டும் போதாது.",
+      "te": "ముందస్తు ఆకు మాడు తెగులు నిర్ధారణ అయితే, తడి వాతావరణంలో వ్యాపించే అవకాశం ఉన్నప్పుడు శిలీంద్రనాశిని అవసరమో వెంటనే అడగండి. చికిత్స పొలం పరిస్థితులపై ఆధారపడి ఉంటుంది; ఫోటో ఒక్కటే సరిపోదు."
+    },
+    {
+      "id": "tomato_fungicide",
+      "section": "treatment",
+      "labels": [
+        "tomato_early_blight"
+      ],
+      "source": "tnau_tomato_early_blight",
+      "en": "TNAU lists mancozeb among options for tomato early blight. After confirmation, ask your local officer whether a currently registered tomato product is suitable. Follow its label for dose, protective clothing, field re-entry and harvest waiting periods. Do not mix products or spray based only on this photo. No cure is guaranteed.",
+      "ta": "தக்காளி முன்பருவ இலைக்கருகலுக்கான மருந்துகளில் மான்கோசெப்பை TNAU குறிப்பிடுகிறது. நோய் உறுதியான பிறகு, தற்போது பதிவு பெற்ற தக்காளி மருந்து பொருத்தமா என்று உள்ளூர் அலுவலரிடம் கேளுங்கள். அளவு, பாதுகாப்பு உடை, வயலில் மீண்டும் நுழையும் நேரம், அறுவடை காத்திருப்பு காலம் ஆகியவற்றுக்கு அதன் லேபிளைப் பின்பற்றுங்கள். மருந்துகளைக் கலக்கவோ இந்தப் படத்தை மட்டும் வைத்து தெளிக்கவோ வேண்டாம். குணமாகும் என்று உத்தரவாதம் இல்லை.",
+      "te": "టమాటా ముందస్తు ఆకు మాడు తెగులుకు TNAU సూచించే మందుల్లో మాంకోజెబ్ ఉంది. నిర్ధారణ తర్వాత ప్రస్తుతం టమాటాకు నమోదు చేసిన ఉత్పత్తి తగినదో స్థానిక అధికారిని అడగండి. మోతాదు, రక్షణ దుస్తులు, పొలంలో మళ్లీ ప్రవేశించే సమయం, కోతకు ముందు నిరీక్షణ కాలానికి లేబుల్ పాటించండి. మందులు కలపవద్దు; ఈ ఫోటో ఆధారంగా మాత్రమే పిచికారీ చేయవద్దు. పూర్తిగా నయమవుతుందని హామీ లేదు."
     },
     {
       "id": "potato_debris",

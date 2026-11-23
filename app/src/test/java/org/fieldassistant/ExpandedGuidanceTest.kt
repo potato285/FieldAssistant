@@ -68,4 +68,23 @@ class ExpandedGuidanceTest {
         }
         assertTrue(repository.allowedActions(finding(FindingStatus.POSSIBLE_MATCH, "potato_healthy"), "Tamil Nadu, India").all { it.section == "reminder" })
     }
+    @Test fun expandedTomatoAdviceStaysWithinItsCropConditionAndRegion() {
+        val repository = AssetGuidanceRepository(JSONObject(File("src/main/assets/guidance.json").readText()))
+        // Synthetic routing fixtures only; this does not test vision or native Llama.
+        fun finding(label: String, status: FindingStatus = FindingStatus.POSSIBLE_MATCH) = Finding(status, "Tomato", VisionResult(
+            listOf(Candidate(CropLabel(label, "Tomato", "fixture", label.endsWith("healthy")), 0.9f)),
+            "TEST FIXTURE", "TEST", 0.0, 0.0))
+        val specific = repository.allowedActions(finding("tomato_early_blight"), "Tamil Nadu, India")
+            .filter { it.section != "reminder" }
+        assertTrue(specific.any { it.section == "care" })
+        assertTrue(specific.count { it.section == "prevention" } >= 5)
+        assertTrue(specific.any { it.id == "tomato_fungicide" })
+        assertTrue(specific.none { it.id.startsWith("potato_") })
+        for (status in FindingStatus.entries.filter { it != FindingStatus.POSSIBLE_MATCH })
+            assertTrue(repository.allowedActions(finding("tomato_early_blight", status), "Tamil Nadu, India").all { it.section == "reminder" })
+        for (label in listOf("tomato_healthy", "tomato_late_blight", "tomato_bacterial_spot"))
+            assertTrue(repository.allowedActions(finding(label), "Tamil Nadu, India").all { it.section == "reminder" })
+        assertTrue(repository.allowedActions(finding("tomato_early_blight"), "Andhra Pradesh, India").all { it.section == "reminder" })
+    }
+
 }

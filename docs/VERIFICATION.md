@@ -4,6 +4,26 @@ These records are from the physical **Nothing A001**, ARM64, Android 16/API 36,
 4 KB pages, MemTotal 7,581,724 kB (approximately 8 GB RAM class), unless marked host.
 A reproduced result is evidence of execution, not a field-accuracy claim.
 
+## v0.4.1 tomato guidance update — 23 November 2026
+
+Command: `bash tools/build.sh assembleDebug testDebugUnitTest lintDebug` (equivalent
+standard setup: `./gradlew assembleDebug testDebugUnitTest lintDebug`).
+
+- Build succeeded; **20 unit tests passed**, lint **0 errors / 9 warnings**.
+- APK: `app/build/outputs/apk/debug/app-debug.apk`; published checksum/size in
+  [release manifest](../models/release.json).
+- Inspected packaged `assets/guidance.json`: byte-identical to source, with ten tomato
+  early-blight cards (previously two), each containing English, Tamil and Telugu.
+- Routing tests cover tomato advice eligibility and exclusion for uncertain/conflicting
+  findings, healthy/other tomato conditions and a different region. These use synthetic
+  routing fixtures, not model predictions.
+- No phone was connected for this update. Native Llama performance with the expanded
+  tomato prompt and spoken pronunciation have not been re-tested. Earlier device
+  evidence remains below; agronomist/native-speaker review is still pending.
+
+[Sanitized build log](verification/v041/build.log). No vision/Llama weights or native
+runtime versions changed. Phase 1 advice coverage remains three crop conditions.
+
 ## v0.4.0 final build and tests
 
 ```sh

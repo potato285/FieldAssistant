@@ -1,6 +1,6 @@
 # Field Assistant — Phase 1 proof-of-concept technical report
 
-Version 0.4.0, Bharat AI–SoC Challenge 2026–27. **Built with Llama.** This report
+Version 0.4.1, Bharat AI–SoC Challenge 2026–27. **Built with Llama.** This report
 separates demonstrated runtime integration from unmeasured field accuracy.
 
 **Phase 1 scope:** 54 classification labels across 19 plants, but **only three
@@ -68,7 +68,10 @@ competition validation or broad advisory correctness.
 
 **Only three conditions have crop-specific advice:** tomato early blight, potato early
 blight and potato late blight, with a fixed Tamil Nadu, India region. All other findings use general observation/referral
-reminders. TNAU, UC IPM, PNW Extension and Manitoba source URLs/scope/dates are in JSON.
+reminders. TNAU, UC IPM, University of Minnesota Extension, PNW Extension and Manitoba source
+URLs/scope/dates are in JSON. v0.4.1 expands tomato early-blight advice from two to ten
+cards in all three languages, including watering, airflow, mulch, planting material,
+weeds, signs and conditional treatment discussion. Coverage remains three conditions.
 Potato fungicide names are conditional officer/label discussion points, with no dose
 or schedule. No agronomist approval or current registration audit is claimed.
 
@@ -87,6 +90,7 @@ Acoustic quality is not established by automated playback/state tests.
 
 | Check | Measured result | Scope |
 | --- | --- | --- |
+| v0.4.1 content update | Debug build, 20 unit tests and lint passed | Host checks; no connected phone for this update |
 | v0.4 build | Debug and unsigned release compile; 19 unit tests; lint 0 errors/9 warnings | Host, not Android runtime |
 | v0.4 potato photo | `potato_early_blight`, score 0.87629944 | Actual content-URI fixture, may overlap training |
 | v0.4 Llama | 22,876 ms; real action selection and English explanation | One final gallery regression run |
